@@ -65,18 +65,19 @@ Add the converted column for "Gender" to the Columns and to the Filters field, a
 The graph should look similar to the following image:<br>
 
 <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/usertrips_gender.png" width = 800><br>  
+We can see that the bike usage of Subscribers is higher compared to the customers during weekdays, with the male being more elevated. But during the weekends, both the users have similar use.<br>
 
 ### 6.Top Starting and Ending Locations
 When we see closely the maps, the CitiBike usage in the starting and ending locations looks the same, with same patterns,smaller and dark-colored circles.
 
 |   *** Top Starting Location ***    | ***Top Ending Locations ***   |
 |  ----------------------------------|  -----------------------------| 
-|  <img src = "" width = 350><br >   | <img src = "" width = 350><br>|<br>
+|  <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/starting_loc.png" width = 350><br >   | <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/endloc.png" width = 350><br>|<br>
                                                     
 ## 7.Gender,Bike Utilization and Bike Repairs
 We can see that the bike usage of Subscribers is higher compared to the customers during weekdays, with the male being more elevated. But during the weekends, both the users have similar use.
 
-<img src = "" width = 700><br>
+<img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/gender_bike_repair.png" width = 700><br>
              
  ## Summary
 - By seeing all the visualizations, we can say that NYC's Citi Bike Program is a massive success for the city with an active population. We can expect the same from Des Moines which is an active city with large population.It has lots of tourist attractions so the CitiBike program would be a success if it is launched there.
