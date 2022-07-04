@@ -18,14 +18,12 @@ The Bike is the key tool which allows to explore the city and interact with vari
 ## Deliverable 1: Change Trip Duration to a Datetime Format 
 The New York Bike Sharing Data has the following columns,Trip Duration,Start Time and Date,Stop Time and Date,Start Station Name,End Station Name,Station ID,Station Lat/Long,Bike ID,User Type (Customer = 24-hour pass or 3-day pass user; Subscriber = Annual Member),Gender (Zero=unknown; 1=male; 2=female)
 Year of Birth.Using Python and Pandas functions, we will convert the "tripduration" column from an integer to a datetime datatype to get the time in hours, minutes, and seconds (00:00:00). After we convert the "tripduration" column to a datetime dataytpe, we will export the DataFrame as a CSV file to use for the trip analysis.When we check the datatypes of each column in the DataFrame.
-<img src = " width = 350><br> 
+<img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/initial%20check%20data%20type.png" width = 350><br> 
             
-While converting the "tripduration" column to a datetime datatype by passing the DataFrame column and the units inside the to_datetime() function.
-When using your GoogleFu to find out how to convert an int64 to a datetime object, it may be more useful to use the following search: "convert seconds to minutes in pandas." Additionally, you can refer to the pandas.to_datetime() documentation (Links to an external site.). In the documentation, it states that in the to_datetime() function, you’ll have to specify the units for conversion. The default is "ns," which stands for nanoseconds.
-
-In Step 4, check the datatypes of the DataFrame.
+We convert the "tripduration" column to a datetime datatype by passing the DataFrame column and the units inside the to_datetime() function.We need to specify the units for conversion.The default is "ns," which stands for nanoseconds.Here we have specified unit as 's'.After converting when we check the datatypes of the DataFrame.<br>
+<img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/datatypecheck.png" width = 350><br> 
 Confirm that the converted values in the "tripduration" column match the following image:
-<img src = " width = 350><br> 
+<img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/trip%20duration%20converted.png" width = 350><br> 
 
 ## Deliverable 2: Create Visualizations for the Trip Analysis 
 Using Tableau, create visualizations that show:
@@ -42,8 +40,9 @@ Add the "tripduration" column again to the Columns, and filter the "More" option
 Add the "tripduration" column that shows the "Hour" to the Filters field, and select "Show Filter".
 Edit the X and Y axis labels by right-clicking on the axis label and selecting "Edit Axis".
 Your graph should look similar to the following image:
-<img src = " width = 350><br>                                                                                           
-                                                                                          
+<img src = " width = 350><br>
+            
+Most bikes were used for less than 1 hour, and most were used for 20 minutes or less. The male riders are more, but we can see the same pattern of checkout times regardless of gender.                                                                                          
 ## 2.Create the Checkout Times by Gender Viz
 In this visualization, you’ll graph the length of time that bikes are checked out for each gender.
 
@@ -52,6 +51,8 @@ Add the converted column for gender as a color to the Marks field, add it to the
 Edit the X and Y axis labels by right-clicking on the axis label and selecting "Edit Axis".
 Your graph should look similar to the following image: 
 <img src = " width = 350><br> 
+
+Most bikes were used for less than 1 hour, and most were used for 20 minutes or less. The male riders are more, but we can see the same pattern of checkout times regardless of gender.
             
 ## 3. Create the Trips by Weekday for Each Hour Viz
 In this visualization, you’ll graph the number of bike trips by weekday for each hour of the day as a heatmap.
@@ -64,6 +65,7 @@ Format the Y axis of the Starttime by Hour to show the 12-hour format, as shown 
 Optional: Format the X axis of Stoptime by Weekday as "Abbreviation".
 Your graph should look similar to the following image:
 <img src = " width = 350><br> 
+We can see that morning, 7-9 am, the bicycle usage is more during the same in the evening from 4-7 pm during weekdays except for Wednesday. We can see full-day use during the weekends.           
 
 ## 4.Create the Trips by Gender (Weekday per Hour) Viz
 In this visualization, you’ll graph the number of bike trips by gender for each hour of each day of the week as a heatmap.
@@ -73,7 +75,9 @@ Add the converted column for "Gender" to the Columns and to the Filters field, a
 Format the Y axis of the Starttime by Hour to show the 12-hour format.
 Optional: Format the X axis of Stoptime by Weekday as "Abbreviation".
 Your graph should look similar to the following image:
-<img src = " width = 350><br> 
+<img src = " width = 350><br>
+
+The usage of bikes is more in males, but we can see the same pattern of hours regardless of gender.
             
 ## 5.Create the User Trips by Gender by Weekday Viz
 In this visualization, you'll create a heatmap that shows the number of bike trips broken down by gender for each day of the week by each Usertype.
@@ -92,11 +96,14 @@ When we see closely the maps, the CitiBike usage in the starting and ending loca
 |  <img src = "" width = 350><br >   | <img src = "" width = 350><br>|<br>
                                                     
 ##7.Gender,Bike Utilization and Bike Repairs
+We can see that the bike usage of Subscribers is higher compared to the customers during weekdays, with the male being more elevated. But during the weekends, both the users have similar use.
+
 <img src = "" width = 350><br>
              
- ##Summary
+ ## Summary
+ By seeing all the visualizations, we can say that NYC's Citi Bike Program is a massive success for the city with an active population. We can expect the same from Des Moines.
              
- ###Additional Visualizations
+ ### Additional Visualizations
              
  ## Ride Count by Birth Year
  <img src = "" width = 350><br>
