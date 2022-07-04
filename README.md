@@ -22,7 +22,7 @@ When using your GoogleFu to find out how to convert an int64 to a datetime objec
 
 In Step 4, check the datatypes of the DataFrame.
 Confirm that the converted values in the "tripduration" column match the following image:
-<img src = "https://github.com/fathi129/Mission-to-Mars/blob/master/Screenshots%20for%20Mission%20to%20mars/nasatitle.png" width = 350><br> 
+<img src = " width = 350><br> 
 
 ## Deliverable 2: Create Visualizations for the Trip Analysis 
 Using Tableau, create visualizations that show:
@@ -31,6 +31,39 @@ How many trips are taken by the hour for each day of the week, for all riders an
 A breakdown of what days of the week a user might be more likely to check out a bike, by type of user and gender.<br>
 
 ## 1. Create the Checkout Times for Users Viz
+In this visualization, you’ll graph the length of time that bikes are checked out for all riders.
+
+Add the number of records or the generated field that counts the number of records in the CSV file to the Rows.
+Add the "tripduration" column you converted to the Columns, and filter the "More" option by "Hour".
+Add the "tripduration" column again to the Columns, and filter the "More" option by "Minute", and then change the values from "discrete" to "continuous".
+Add the "tripduration" column that shows the "Hour" to the Filters field, and select "Show Filter".
+Edit the X and Y axis labels by right-clicking on the axis label and selecting "Edit Axis".
+Your graph should look similar to the following image:
+<img src = " width = 350><br>                                                                                           
+                                                                                          
+## 2.Create the Checkout Times by Gender Viz
+In this visualization, you’ll graph the length of time that bikes are checked out for each gender.
+
+Repeat steps 1-4 of the "Checkout Times for Users" visualization.
+Add the converted column for gender as a color to the Marks field, add it to the Filters field, and select "Show Filter".
+Edit the X and Y axis labels by right-clicking on the axis label and selecting "Edit Axis".
+Your graph should look similar to the following image: 
+<img src = " width = 350><br> 
+            
+## 3. Create the Trips by Weekday for Each Hour Viz
+In this visualization, you’ll graph the number of bike trips by weekday for each hour of the day as a heatmap.
+
+Add the "Starttime" column to the Rows, and filter the "More" option by "Hour".
+Add the "Stoptime" column to the Columns, and filter the “More” option by "Weekday".
+Add the number of records or the generated field that counts the number of records in the CSV file to the Marks field as a color. Select "Automatic" for the type of graph to create the heatmap.
+Format the Y axis of the Starttime by Hour to show the 12-hour format, as shown in the following image:
+
+Optional: Format the X axis of Stoptime by Weekday as "Abbreviation".
+Your graph should look similar to the following image:
+<img src = " width = 350><br> 
+
+
+            
 
 
 
