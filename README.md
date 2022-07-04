@@ -1,19 +1,17 @@
 # NYC_Citi_BikeSharing
-To explore and analyze the New York Citi Bike Program and create powerful dashboards and stories using Tableau.
+Explore and analyze the New York Citi Bike Program and create powerful dashboards and stories using Tableau.
 
 ## Overview of the Analysis
-Tableau is a data analysis and visualization tool.It is so popular because it allows data visualization professionals to create assets that are visually appealing and easy for non-technical audience to understand.We can create clear,easy to grasp data stories.
-Tableau provides the tools for creating powerful analytic dashboards,tell a clear story and can be easily shared with others.The components in tableau are Worksheets,Dashboards,Stories.<br>
+Tableau is a data analysis and visualization tool. It is so popular because it allows data visualization professionals to create visually appealing assets that are easy for non-technical audiences to understand. We can make explicit, easy-to-grasp data stories. Tableau provides the tools for creating powerful analytic dashboards that tell a straightforward story and can be easily shared with others. The components in Tableau are Worksheets, Dashboards, and Stories.<br>
 
 ## Purpose of the Analysis
-The aim of this analysis is to explore and visualize the CitiBike,which is a privately owned public bicycle sharing system serving the New York city.
-The Bike is the key tool which allows to explore the city and interact with various people who live there.An tourist who visited the New York wants to establish a similar bike sharing business in their home town Des Moines,Iowa.In order to establish the same program,we need to analyze the New York citibike program further to know more about the data.
+This analysis aims to explore and visualize the CitiBike, a privately owned public bicycle sharing system serving New York City. A Bike is a critical tool that allows one to explore the city and interact with various people who live there. A tourist who visited New York wants to establish a similar bike-sharing business in their hometown, Des Moines, Iowa. To set the same program, we need to analyze the New York Citi bike program further to know more about the data.<br>
 
 ## Resources Used
-*DataSources*: [NYC_CitiBike_Data](https://ride.citibikenyc.com/system-data) <br>
+*DataSources*:  [NYC_CitiBike_Data](https://ride.citibikenyc.com/system-data) <br>
 *Software used*:  Jupyter Notebook,Tableau.<br>
 *Language*: Python.<br>
-*Dashboard*:[Link to DashBoard](https://public.tableau.com/app/profile/nasreen.fathima.habeeb.rahman/viz/NYC_Citi_Bike_Program/NYCCitiBikeProgram)
+*Dashboard*: [Link to DashBoard](https://public.tableau.com/app/profile/nasreen.fathima.habeeb.rahman/viz/NYC_Citi_Bike_Program/NYCCitiBikeProgram)
 
 ## Deliverable 1: Change Trip Duration to a Datetime Format 
 The New York Bike Sharing Data has the following columns,Trip Duration,Start Time and Date,Stop Time and Date,Start Station Name,End Station Name,Station ID,Station Lat/Long,Bike ID,User Type (Customer = 24-hour pass or 3-day pass user; Subscriber = Annual Member),Gender (Zero=unknown; 1=male; 2=female)
@@ -68,7 +66,7 @@ The graph should look similar to the following image:<br>
 We can see that the bike usage of Subscribers is higher compared to the customers during weekdays, with the male being more elevated. But during the weekends, both the users have similar use.<br>
 
 ### 6.Top Starting and Ending Locations
-When we see closely the maps, the CitiBike usage in the starting and ending locations looks the same, with same patterns,smaller and dark-colored circles.
+When we closely see the maps, the CitiBike usage in the starting and ending locations looks the same, with the same patterns and smaller and dark-colored circles.
 
 |   *** Top Starting Location ***    | ***Top Ending Locations ***   |
 |  ----------------------------------|  -----------------------------| 
@@ -80,16 +78,16 @@ We can see that the bike usage of Subscribers is higher compared to the customer
 <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/gender_bike_repair.png" width = 700><br>
              
  ## Summary
-- By seeing all the visualizations, we can say that NYC's Citi Bike Program is a massive success for the city with an active population. We can expect the same from Des Moines which is an active city with large population.It has lots of tourist attractions so the CitiBike program would be a success if it is launched there.
-- Generally we can see from the New york CitiBike data Visualizations,there are more number of riders in the morning 7-9am and in the evening 4-7pm.We can say most of the office or college people use this commute.We can even see that there are more number of riders for the whole day during weekends.The people spend biking time with family and kids during weekend.We can always say that biking is great way to reach places faster with out traffic.It is generally preferred by people of all ages and genders.<br>              
+- By seeing all the visualizations, we can say that NYC's Citi Bike Program is a massive success for the city with an active population. We can expect the same from Des Moines, which is an energetic city with large people.It has many tourist attractions, so the CitiBike program would be a success if launched there.
+- Generally, we can see from the New york CitiBike data Visualizations that there are more riders in the morning, 7-9 am, and in the evening, 4-7 pm. We can say most of the office or college people use this commute. We can even see that there is more number of riders for the whole day during weekends. The people spend biking time with family and kids during the weekend. We can always say that biking is a great way to reach places faster without traffic.People of all ages and genders generally prefer it.<br>              
  ### Ride Count by Birth Year
- We can perform further visualizations on the given data to know more about riders age group,From this analysis we can see that the riders with the birth year 1969 are high in this graph.So we can say that riders in this group prefer bike commute.            
+ We can perform different visualizations on the given data to know more about riders age group, From this analysis, we can see that the riders with the birth year 1969 are high in this graph. So we can say that riders in this group prefer bike commute.<br>          
  <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/Ride%20count%20by%20birth%20year.png" width = 800><br>
  ### Starting Staions
- When we see the starting locations,we can see that Pershing Square North starting location has more number of riders when compared to other locations.we need to ensure that we have enough number of bikes in this location.<br>
+When we see the starting locations, we can see that Pershing Square North starting location has more riders when compared to other locations. we need to ensure that we have enough bikes in this location.<br>
  <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/Startingstation.png" width = 800><br>                         
  ### Customers Vs Subscribers
- We can compute the user group of customers and subscribers based on the pie chart.When we see the pie chart we can see that subscribers are high in number compared to the users.
+ We can compute the user group of customers and subscribers based on the pie chart. When we see the pie chart, we can see that subscribers are high in number compared to the users.<br> 
  <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/CustvsSub.png" width = 700><br>             
              
                                                     
