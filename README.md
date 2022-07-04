@@ -1,9 +1,11 @@
 # NYC_Citi_BikeSharing
 To explore and analyze the New York Citi Bike Program and create powerful dashboards and stories using Tableau.
 
-##Overview of the Analysis
-Tableau is a data analysis and visualization tool.It is so popular because it allows data visualization professionals to create assets that are visually appealing and easy for non-technical audience
-##Purpose of the Analysis
+## Overview of the Analysis
+Tableau is a data analysis and visualization tool.It is so popular because it allows data visualization professionals to create assets that are visually appealing and easy for non-technical audience to understand.We can create clear,easy to grasp data stories.
+Tableau provides the tools for creating powerful analytic dashboards,tell a clear story and can be easily shared with others.The components in tableau are Worksheets,Dashboards,Stories.<br>
+
+## Purpose of the Analysis
 
 ## Resources Used
 *DataSources*: [NYC_CitiBike_Data](https://ride.citibikenyc.com/system-data) <br>
