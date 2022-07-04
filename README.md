@@ -17,67 +17,47 @@ The Bike is the key tool which allows to explore the city and interact with vari
 
 ## Deliverable 1: Change Trip Duration to a Datetime Format 
 The New York Bike Sharing Data has the following columns,Trip Duration,Start Time and Date,Stop Time and Date,Start Station Name,End Station Name,Station ID,Station Lat/Long,Bike ID,User Type (Customer = 24-hour pass or 3-day pass user; Subscriber = Annual Member),Gender (Zero=unknown; 1=male; 2=female)
-Year of Birth.Using Python and Pandas functions, we will convert the "tripduration" column from an integer to a datetime datatype to get the time in hours, minutes, and seconds (00:00:00). After we convert the "tripduration" column to a datetime dataytpe, we will export the DataFrame as a CSV file to use for the trip analysis.When we check the datatypes of each column in the DataFrame.
+Year of Birth.Using Python and Pandas functions, we will convert the "tripduration" column from an integer to a datetime datatype to get the time in hours, minutes, and seconds (00:00:00). After we convert the "tripduration" column to a datetime dataytpe, we will export the DataFrame as a CSV file to use for the trip analysis.When we check the datatypes of each column in the DataFrame.<br>
 <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/initial%20check%20data%20type.png" width = 350><br> 
             
 We convert the "tripduration" column to a datetime datatype by passing the DataFrame column and the units inside the to_datetime() function.We need to specify the units for conversion.The default is "ns," which stands for nanoseconds.Here we have specified unit as 's'.After converting when we check the datatypes of the DataFrame.<br>
 <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/datatypecheck.png" width = 350><br> 
-Confirm that the converted values in the "tripduration" column match the following image:
+The converted values in the "tripduration" column looks like the following image:<br>
 <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/trip%20duration%20converted.png" width = 350><br> 
 
 ## Deliverable 2: Create Visualizations for the Trip Analysis 
-Using Tableau, create visualizations that show:
+Using Tableau, we create visualizations that show:
 How long bikes are checked out for all riders and genders.
 How many trips are taken by the hour for each day of the week, for all riders and genders.
 A breakdown of what days of the week a user might be more likely to check out a bike, by type of user and gender.<br>
 
 ## 1. Create the Checkout Times for Users Viz
-In this visualization, you’ll graph the length of time that bikes are checked out for all riders.
+In this visualization, we will graph the length of time that bikes are checked out for all riders.Add the number of records or the generated field that counts the number of records in the CSV file to the Rows.Add the "tripduration" column you converted to the Columns, and filter the "More" option by "Hour".Add the "tripduration" column again to the Columns, and filter the "More" option by "Minute", and then change the values from "discrete" to "continuous".Add the "tripduration" column that shows the "Hour" to the Filters field, and select "Show Filter".
+The graph should look similar to the following image:<br>
+<img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/Checkout_times_for%20users.png" width = 350><br>            
+Most bikes were used for less than 1 hour, and most were used for 20 minutes or less. The male riders are more, but we can see the same pattern of checkout times regardless of gender.<br> 
 
-Add the number of records or the generated field that counts the number of records in the CSV file to the Rows.
-Add the "tripduration" column you converted to the Columns, and filter the "More" option by "Hour".
-Add the "tripduration" column again to the Columns, and filter the "More" option by "Minute", and then change the values from "discrete" to "continuous".
-Add the "tripduration" column that shows the "Hour" to the Filters field, and select "Show Filter".
-Edit the X and Y axis labels by right-clicking on the axis label and selecting "Edit Axis".
-Your graph should look similar to the following image:
-<img src = " width = 350><br>
-            
-Most bikes were used for less than 1 hour, and most were used for 20 minutes or less. The male riders are more, but we can see the same pattern of checkout times regardless of gender.                                                                                          
 ## 2.Create the Checkout Times by Gender Viz
-In this visualization, you’ll graph the length of time that bikes are checked out for each gender.
-
-Repeat steps 1-4 of the "Checkout Times for Users" visualization.
+In this visualization, we will graph the length of time that bikes are checked out for each gender.
+Add the number of records or the generated field that counts the number of records in the CSV file to the Rows.Add the "tripduration" column you converted to the Columns, and filter the "More" option by "Hour".Add the "tripduration" column again to the Columns, and filter the "More" option by "Minute", and then change the values from "discrete" to "continuous".Add the "tripduration" column that shows the "Hour" to the Filters field, and select "Show Filter".
 Add the converted column for gender as a color to the Marks field, add it to the Filters field, and select "Show Filter".
-Edit the X and Y axis labels by right-clicking on the axis label and selecting "Edit Axis".
-Your graph should look similar to the following image: 
-<img src = " width = 350><br> 
-
+The graph should look similar to the following image: 
+<img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/checkout%20time%20for%20gender.png" width = 350><br> 
 Most bikes were used for less than 1 hour, and most were used for 20 minutes or less. The male riders are more, but we can see the same pattern of checkout times regardless of gender.
             
 ## 3. Create the Trips by Weekday for Each Hour Viz
-In this visualization, you’ll graph the number of bike trips by weekday for each hour of the day as a heatmap.
-
-Add the "Starttime" column to the Rows, and filter the "More" option by "Hour".
-Add the "Stoptime" column to the Columns, and filter the “More” option by "Weekday".
-Add the number of records or the generated field that counts the number of records in the CSV file to the Marks field as a color. Select "Automatic" for the type of graph to create the heatmap.
-Format the Y axis of the Starttime by Hour to show the 12-hour format, as shown in the following image:
-
-Optional: Format the X axis of Stoptime by Weekday as "Abbreviation".
-Your graph should look similar to the following image:
-<img src = " width = 350><br> 
-We can see that morning, 7-9 am, the bicycle usage is more during the same in the evening from 4-7 pm during weekdays except for Wednesday. We can see full-day use during the weekends.           
+In this visualization, we will graph the number of bike trips by weekday for each hour of the day as a heatmap.
+Add the "Starttime" column to the Rows, and filter the "More" option by "Hour".Add the "Stoptime" column to the Columns, and filter the “More” option by "Weekday".Add the number of records or the generated field that counts the number of records in the CSV file to the Marks field as a color. Select "Automatic" for the type of graph to create the heatmap.Format the Y axis of the Starttime by Hour to show the 12-hour format.Format the X axis of Stoptime by Weekday as "Abbreviation".<br>
+The graph should look similar to the following image:<br>
+<img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/del2_trip_weekday_hr.png" width = 350><br> 
+We can see that morning, 7-9 am, the bicycle usage is more during the same in the evening from 4-7 pm during weekdays except for Wednesday. We can see full-day use during the weekends.<br>          
 
 ## 4.Create the Trips by Gender (Weekday per Hour) Viz
-In this visualization, you’ll graph the number of bike trips by gender for each hour of each day of the week as a heatmap.
-
-Repeat steps 1-3 from the "Trips by Weekday per Hour" visualization.
-Add the converted column for "Gender" to the Columns and to the Filters field, and select "Show Filter".
-Format the Y axis of the Starttime by Hour to show the 12-hour format.
-Optional: Format the X axis of Stoptime by Weekday as "Abbreviation".
-Your graph should look similar to the following image:
-<img src = " width = 350><br>
-
-The usage of bikes is more in males, but we can see the same pattern of hours regardless of gender.
+In this visualization, we will graph the number of bike trips by gender for each hour of each day of the week as a heatmap.
+Add the "Starttime" column to the Rows, and filter the "More" option by "Hour".Add the "Stoptime" column to the Columns, and filter the “More” option by "Weekday".Add the number of records or the generated field that counts the number of records in the CSV file to the Marks field as a color. Select "Automatic" for the type of graph to create the heatmap.Add the converted column for "Gender" to the Columns and to the Filters field, and select "Show Filter".Format the Y axis of the Starttime by Hour to show the 12-hour format.Format the X axis of Stoptime by Weekday as "Abbreviation".<br>
+The graph should look similar to the following image:<br>
+<img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/del2_trip_by_gender.png" width = 350><br>
+The usage of bikes is more in males, but we can see the same pattern of hours regardless of gender.<br>
             
 ## 5.Create the User Trips by Gender by Weekday Viz
 In this visualization, you'll create a heatmap that shows the number of bike trips broken down by gender for each day of the week by each Usertype.
