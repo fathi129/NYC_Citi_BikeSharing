@@ -76,20 +76,20 @@ When we see closely the maps, the CitiBike usage in the starting and ending loca
 ## 7.Gender,Bike Utilization and Bike Repairs
 We can see that the bike usage of Subscribers is higher compared to the customers during weekdays, with the male being more elevated. But during the weekends, both the users have similar use.
 
-<img src = "" width = 500><br>
+<img src = "" width = 700><br>
              
  ## Summary
 - By seeing all the visualizations, we can say that NYC's Citi Bike Program is a massive success for the city with an active population. We can expect the same from Des Moines which is an active city with large population.It has lots of tourist attractions so the CitiBike program would be a success if it is launched there.
 - Generally we can see from the New york CitiBike data Visualizations,there are more number of riders in the morning 7-9am and in the evening 4-7pm.We can say most of the office or college people use this commute.We can even see that there are more number of riders for the whole day during weekends.The people spend biking time with family and kids during weekend.We can always say that biking is great way to reach places faster with out traffic.It is generally preferred by people of all ages and genders.<br>              
  ### Ride Count by Birth Year
  We can perform further visualizations on the given data to know more about riders age group,From this analysis we can see that the riders with the birth year 1969 are high in this graph.So we can say that riders in this group prefer bike commute.            
- <img src = "" width = 350><br>
+ <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/Ride%20count%20by%20birth%20year.png" width = 700><br>
  ### Starting Staions
  When we see the starting locations,we can see that this starting location has more number of riders.we need to ensure that we have enough number of bikes in this location.<br>
- <img src = "" width = 350><br>                         
+ <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/Startingstation.png" width = 700><br>                         
  ### Customers Vs Subscribers
  We can compute the user group of customers and subscribers based on the pie chart.When we see the pie chart we can see that subscribers are high in number compared to the users.
- <img src = "" width = 350><br>             
+ <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/CustvsSub.png" width = 700><br>             
              
                                                     
                                                     
