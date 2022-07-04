@@ -1,12 +1,14 @@
 # NYC_Citi_BikeSharing
+To explore and analyze the New York Citi Bike Program and create powerful dashboards and stories using Tableau.
 
 ##Overview of the Analysis
+Tableau is a data analysis and visualization tool.It is so popular because it allows data visualization professionals to create assets that are visually appealing and easy for non-technical audience
 ##Purpose of the Analysis
 
 ## Resources Used
-*DataSources*: https://redplanetscience.com, https://spaceimages-mars.com/, https://galaxyfacts-mars.com/, https://marshemispheres.com/ <br>
-*Software used*: Visual Studio Code 1.56.0, Jupyter Notebook, Flask 1.1.2, Splinter 1.26.4, Web Drive Manager, Beautiful Soup, Pymongo, MongoDB 4.4.6, Mongo DB Compass, HTML, Bootstrap 3.3.7
-*Language*: Python. <br>
+*DataSources*: [NYC_CitiBike_Data](https://ride.citibikenyc.com/system-data) <br>
+*Software used*:  Jupyter Notebook,Tableau.<br>
+*Language*: Python.<br>
 
 ## Deliverable 1: Change Trip Duration to a Datetime Format 
 Using Python and Pandas functions, you’ll convert the "tripduration" column from an integer to a datetime datatype to get the time in hours, minutes, and seconds (00:00:00). After you convert the "tripduration" column to a datetime dataytpe, you’ll export the DataFrame as a CSV file to use for the trip analysis in Deliverable 2.
