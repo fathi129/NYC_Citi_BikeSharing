@@ -6,6 +6,8 @@ Tableau is a data analysis and visualization tool.It is so popular because it al
 Tableau provides the tools for creating powerful analytic dashboards,tell a clear story and can be easily shared with others.The components in tableau are Worksheets,Dashboards,Stories.<br>
 
 ## Purpose of the Analysis
+The aim of this analysis is to explore and visualize the CitiBike,which is a privately owned public bicycle sharing system serving the New York city.
+The Bike is the key tool which allows to explore the city and interact with various people who live thereAn tourist who visited the New York wants to establish a similar bike sharing in their home town Des Moines,Iowa.
 
 ## Resources Used
 *DataSources*: [NYC_CitiBike_Data](https://ride.citibikenyc.com/system-data) <br>
