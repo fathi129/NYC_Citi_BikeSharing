@@ -62,18 +62,33 @@ Optional: Format the X axis of Stoptime by Weekday as "Abbreviation".
 Your graph should look similar to the following image:
 <img src = " width = 350><br> 
 
+## 4.Create the Trips by Gender (Weekday per Hour) Viz
+In this visualization, you’ll graph the number of bike trips by gender for each hour of each day of the week as a heatmap.
 
+Repeat steps 1-3 from the "Trips by Weekday per Hour" visualization.
+Add the converted column for "Gender" to the Columns and to the Filters field, and select "Show Filter".
+Format the Y axis of the Starttime by Hour to show the 12-hour format.
+Optional: Format the X axis of Stoptime by Weekday as "Abbreviation".
+Your graph should look similar to the following image:
+<img src = " width = 350><br> 
             
+## 5.Create the User Trips by Gender by Weekday Viz
+In this visualization, you'll create a heatmap that shows the number of bike trips broken down by gender for each day of the week by each Usertype.
 
-
-
-
-
+Add the converted column for "Gender" to the Columns and to the Filters field, and select "Show Filter".
+Add the "Usertype" to the Rows and to the Filters field, and select "Show Filter".
+Add the "Starttime" column to the Rows, and filter the "More" option by "Weekday".
+Add the number of records or the generated field that counts the number of records in the CSV file to the Marks field as a color. Select "Automatic" for the type of graph to create the heatmap.
+Your graph should look similar to the following image:
+ 
 ##6.Top Starting and Ending Locations
 
 |   *** Top Starting Location ***    | ***Top Ending Locations ***   |
 |  ----------------------------------|  -----------------------------| 
 |  <img src = "" width = 350><br >   | <img src = "" width = 350><br>|<br>
+                                                    
+## Ride Count by                                                     
+                                                    
 
 
 
