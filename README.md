@@ -7,23 +7,20 @@ Tableau provides the tools for creating powerful analytic dashboards,tell a clea
 
 ## Purpose of the Analysis
 The aim of this analysis is to explore and visualize the CitiBike,which is a privately owned public bicycle sharing system serving the New York city.
-The Bike is the key tool which allows to explore the city and interact with various people who live thereAn tourist who visited the New York wants to establish a similar bike sharing in their home town Des Moines,Iowa.
+The Bike is the key tool which allows to explore the city and interact with various people who live there.An tourist who visited the New York wants to establish a similar bike sharing business in their home town Des Moines,Iowa.In order to establish the same program,we need to analyze the New York citibike program further to know more about the data.
 
 ## Resources Used
 *DataSources*: [NYC_CitiBike_Data](https://ride.citibikenyc.com/system-data) <br>
 *Software used*:  Jupyter Notebook,Tableau.<br>
 *Language*: Python.<br>
+[Link to DashBoard](https://public.tableau.com/app/profile/nasreen.fathima.habeeb.rahman/viz/NYC_Citi_Bike_Program/NYCCitiBikeProgram)
 
 ## Deliverable 1: Change Trip Duration to a Datetime Format 
-Using Python and Pandas functions, you’ll convert the "tripduration" column from an integer to a datetime datatype to get the time in hours, minutes, and seconds (00:00:00). After you convert the "tripduration" column to a datetime dataytpe, you’ll export the DataFrame as a CSV file to use for the trip analysis in Deliverable 2.
-
-Follow the instructions below to complete Deliverable 1.
-
-Download the NYC_CitiBike_Challenge_starter_code.ipynb file into your bikesharing folder, and rename it NYC_Citibike_Challenge.ipynb.
-Use the instructions below to add code where indicated by the numbered-step comments in the starter code file. We have provided the dependencies you will need for this challenge.
-In Step 1, create a DataFrame from the 201908-citibike-tripdata.csv file.
-In Step 2, check the datatypes of each column in the DataFrame.
-In Step 3, convert the "tripduration" column to a datetime datatype by passing the DataFrame column and the units inside the to_datetime() function.
+The New York Bike Sharing Data has the following columns,Trip Duration,Start Time and Date,Stop Time and Date,Start Station Name,End Station Name,Station ID,Station Lat/Long,Bike ID,User Type (Customer = 24-hour pass or 3-day pass user; Subscriber = Annual Member),Gender (Zero=unknown; 1=male; 2=female)
+Year of Birth.Using Python and Pandas functions, we will convert the "tripduration" column from an integer to a datetime datatype to get the time in hours, minutes, and seconds (00:00:00). After we convert the "tripduration" column to a datetime dataytpe, we will export the DataFrame as a CSV file to use for the trip analysis.When we check the datatypes of each column in the DataFrame.
+<img src = " width = 350><br> 
+            
+While converting the "tripduration" column to a datetime datatype by passing the DataFrame column and the units inside the to_datetime() function.
 When using your GoogleFu to find out how to convert an int64 to a datetime object, it may be more useful to use the following search: "convert seconds to minutes in pandas." Additionally, you can refer to the pandas.to_datetime() documentation (Links to an external site.). In the documentation, it states that in the to_datetime() function, you’ll have to specify the units for conversion. The default is "ns," which stands for nanoseconds.
 
 In Step 4, check the datatypes of the DataFrame.
@@ -88,6 +85,7 @@ Add the number of records or the generated field that counts the number of recor
 Your graph should look similar to the following image:
 <img src = "" width = 350><br>   
 ##6.Top Starting and Ending Locations
+When we see closely the maps, the CitiBike usage in the starting and ending locations looks the same, with same patterns,smaller and dark-colored circles.
 
 |   *** Top Starting Location ***    | ***Top Ending Locations ***   |
 |  ----------------------------------|  -----------------------------| 
