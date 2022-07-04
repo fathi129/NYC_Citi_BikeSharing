@@ -80,14 +80,29 @@ Add the "Usertype" to the Rows and to the Filters field, and select "Show Filter
 Add the "Starttime" column to the Rows, and filter the "More" option by "Weekday".
 Add the number of records or the generated field that counts the number of records in the CSV file to the Marks field as a color. Select "Automatic" for the type of graph to create the heatmap.
 Your graph should look similar to the following image:
- 
+<img src = "" width = 350><br>   
 ##6.Top Starting and Ending Locations
 
 |   *** Top Starting Location ***    | ***Top Ending Locations ***   |
 |  ----------------------------------|  -----------------------------| 
 |  <img src = "" width = 350><br >   | <img src = "" width = 350><br>|<br>
                                                     
-## Ride Count by                                                     
+##7.Gender,Bike Utilization and Bike Repairs
+<img src = "" width = 350><br>
+             
+ ##Summary
+             
+ ###Additional Visualizations
+             
+ ## Ride Count by Birth Year
+ <img src = "" width = 350><br>
+ ## Starting Staions
+ <img src = "" width = 350><br>             
+             
+ ## Customers Vs Subscribers
+ <img src = "" width = 350><br>             
+             
+                                                    
                                                     
 
 
