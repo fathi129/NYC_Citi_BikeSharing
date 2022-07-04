@@ -86,7 +86,7 @@ We can see that the bike usage of Subscribers is higher compared to the customer
  We can perform further visualizations on the given data to know more about riders age group,From this analysis we can see that the riders with the birth year 1969 are high in this graph.So we can say that riders in this group prefer bike commute.            
  <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/Ride%20count%20by%20birth%20year.png" width = 800><br>
  ### Starting Staions
- When we see the starting locations,we can see that this starting location has more number of riders.we need to ensure that we have enough number of bikes in this location.<br>
+ When we see the starting locations,we can see that Pershing Square North starting location has more number of riders when compared to other locations.we need to ensure that we have enough number of bikes in this location.<br>
  <img src = "https://github.com/fathi129/NYC_Citi_BikeSharing/blob/master/Screenshot_Tableau/Startingstation.png" width = 800><br>                         
  ### Customers Vs Subscribers
  We can compute the user group of customers and subscribers based on the pie chart.When we see the pie chart we can see that subscribers are high in number compared to the users.
